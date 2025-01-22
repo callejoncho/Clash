@@ -1,5 +1,11 @@
 # 
 DOMAIN-SUFFIX,stockx.com
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,qualtrics.com
+DOMAIN-SUFFIX,perimeterx.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,riskified.com
 DOMAIN-SUFFIX,alias.com
 DOMAIN-SUFFIX,alias.org
 DOMAIN-SUFFIX,appsflyer.com
@@ -8,3 +14,5 @@ DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,goat.com
 DOMAIN-SUFFIX,ip.gs
 DOMAIN-SUFFIX,ipjiance.com
+
+
