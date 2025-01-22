@@ -1,0 +1,4 @@
+# 
+# 
+DOMAIN-SUFFIX,finishline.com
+DOMAIN-SUFFIX,jdsports.com
