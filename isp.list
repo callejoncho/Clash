@@ -7,7 +7,7 @@ IP-CIDR,23.188.136.64/29,no-resolve
 IP-CIDR,23.188.136.72/30,no-resolve
 IP-CIDR,23.188.136.76/32,no-resolve
 IP-CIDR,104.194.10.124/32,no-resolve
-
+DOMAIN-SUFFIX,lum-superproxy.com
 IP-CIDR,103.136.71.102/32,no-resolve
 IP-CIDR,103.136.71.103/32,no-resolve
 IP-CIDR,103.136.71.104/32,no-resolve
