@@ -10,6 +10,8 @@ IP-CIDR,104.194.10.124/32,no-resolve
 DOMAIN-SUFFIX,lum-superproxy.com
 DOMAIN-SUFFIX,geosurf.vip
 DOMAIN-SUFFIX,owproxy.com
+DOMAIN-SUFFIX,auth.aycd.io
+DOMAIN-SUFFIX,aycd.io
 IP-CIDR,103.136.71.102/32,no-resolve
 IP-CIDR,103.136.71.103/32,no-resolve
 IP-CIDR,103.136.71.104/32,no-resolve
