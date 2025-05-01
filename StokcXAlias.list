@@ -1,6 +1,8 @@
 # 
 DOMAIN-SUFFIX,stockx.com
-sardine.ai
+DOMAIN-SUFFIX,auth.aycd.io
+DOMAIN-SUFFIX,aycd.io
+DOMAIN-SUFFIXsardine.ai
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,sardine.ai
 DOMAIN-SUFFIX,appsflyersdk.com
@@ -19,5 +21,6 @@ DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,goat.com
 DOMAIN-SUFFIX,ip.gs
 DOMAIN-SUFFIX,ipjiance.com
+
 
 
