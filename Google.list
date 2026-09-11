@@ -62,10 +62,10 @@ DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,recaptcha.net
 # Google DNS 与公网 IP 段
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
-IP-CIDR,172.217.0.0/16,no-resolve
-IP-CIDR,173.194.0.0/16,no-resolve
-IP-CIDR,74.125.0.0/16,no-resolve
-IP-CIDR,216.58.192.0/19,no-resolve
-IP-CIDR,142.250.0.0/15,no-resolve
+#IP-CIDR,8.8.8.8/32,no-resolve
+#IP-CIDR,8.8.4.4/32,no-resolve
+#IP-CIDR,172.217.0.0/16,no-resolve
+#IP-CIDR,173.194.0.0/16,no-resolve
+#IP-CIDR,74.125.0.0/16,no-resolve
+#IP-CIDR,216.58.192.0/19,no-resolve
+#IP-CIDR,142.250.0.0/15,no-resolve
