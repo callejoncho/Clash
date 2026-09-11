@@ -1,0 +1,71 @@
+# Google
+# Google 核心与搜索服务
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,youtube
+DOMAIN-KEYWORD,gmail
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,google.com.hk
+DOMAIN-SUFFIX,google.co.jp
+DOMAIN-SUFFIX,google.co.kr
+DOMAIN-SUFFIX,google.co.uk
+DOMAIN-SUFFIX,google.ca
+DOMAIN-SUFFIX,google.de
+DOMAIN-SUFFIX,google.fr
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googlecode.com
+DOMAIN-SUFFIX,googlesource.com
+DOMAIN-SUFFIX,googlehosted.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,ggpht.com
+# YouTube 视频服务
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,youtubego.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+# Gmail 邮箱服务
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,googlemail.com
+# Android 与 Google Play
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,androidify.com
+DOMAIN-SUFFIX,play.google.com
+DOMAIN-SUFFIX,playinstallreporting.googleapis.com
+# Chrome 浏览器与开源组件
+DOMAIN-SUFFIX,chrome.com
+DOMAIN-SUFFIX,chromecast.com
+DOMAIN-SUFFIX,chromium.org
+# Google Gemini 与 AI 服务
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+# 云服务、广告与开发生态
+DOMAIN-SUFFIX,admobs.com
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,1e100.net
+DOMAIN-SUFFIX,recaptcha.net
+# Google DNS 与公网 IP 段
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,172.217.0.0/16,no-resolve
+IP-CIDR,173.194.0.0/16,no-resolve
+IP-CIDR,74.125.0.0/16,no-resolve
+IP-CIDR,216.58.192.0/19,no-resolve
+IP-CIDR,142.250.0.0/15,no-resolve
