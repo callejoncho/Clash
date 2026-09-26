@@ -1,0 +1,74 @@
+# ============================================================
+# Arcteryx「访问商品 → 加车 → 结账」全流程域名清单
+# ============================================================
+# 依据：抓取 arcteryx.com/ca 首页 / 商品页 / 购物车页 + 12 个自家 JS 包，
+#       再用只读探针读你**真实结账页**（/ca/en/checkout/）的 performance 资源表
+#       —— 该页实测连了 61 个域名 / 500 条资源。
+# 语法：Surge / Clash 通用（DOMAIN-SUFFIX = 含所有子域；DOMAIN = 精确主机名）
+# 用法：想最稳（让风控和统计看到同一个出口 IP）→ 整份都走代理；
+#       只想页面能打开能下单 → 只走第 1、2 段，其余按需。
+# ⚠️ 3DS 银行验证那一步会跳到发卡行自己的域（各家银行不同，事先无法穷举）
+#    → 那一步建议临时放行全部，否则验证页打不开就付不了款。
+# ============================================================
+
+# ---------- 1. 站点本体（一个后缀覆盖所有子域）----------
+DOMAIN-SUFFIX,arcteryx.com          # www/checkout/api/images/scripts/smetrics/ui-components… 全含
+DOMAIN-SUFFIX,arcteryx.ca           # resale.arcteryx.ca —— .ca 后缀，arcteryx.com 覆盖不到，必须单独加
+
+# ---------- 2. 支付 & 风控（结账必需，别省）----------
+DOMAIN-SUFFIX,adyen.com             # 支付框就在里面：checkoutshopper-live-us / checkoutanalytics-live-us / *.cdn.adyen.com
+DOMAIN-SUFFIX,adyenpayments.com     # 提交订单时 Adyen 真正调的接口族（探针看不到，稳妥照加）
+DOMAIN-SUFFIX,forter.com            # 反欺诈风控，结账页实测在用（cbf12a88ccce.cdn4 / cdn0 / cdn3）
+DOMAIN,www.google.com               # reCAPTCHA 帧（/recaptcha/api2/bframe）
+DOMAIN,www.gstatic.com              # reCAPTCHA 资源
+DOMAIN-SUFFIX,google.com.hk         # 结账页也请求了它（本地化资源），不加多半也没事
+
+# ---------- 3. 页面完整性 ----------
+DOMAIN-SUFFIX,imgix.net             # 商品图：images-dynamic-arcteryx.imgix.net
+DOMAIN-SUFFIX,sanity.io             # 内容 CDN：cdn.sanity.io（首页引用 255 次）
+DOMAIN-SUFFIX,cookielaw.org         # 同意横幅（OneTrust）
+DOMAIN-SUFFIX,onetrust.com          # 同意横幅后端
+DOMAIN-SUFFIX,typekit.net           # Adobe 字体（影响排版观感）
+DOMAIN,mpc2-prod-29-is5qnl632q-uc.a.run.app   # 结账页确实 fetch 了它（用途未知，别拦）
+
+# ---------- 4. 支付方式（按你实际用哪种加）----------
+DOMAIN-SUFFIX,cdn-apple.com                     # Apple Pay 脚本
+DOMAIN,apple-pay-gateway.apple.com              # Apple Pay 网关
+DOMAIN,pay.google.com                           # Google Pay 帧
+DOMAIN-SUFFIX,paypal.com                        # PayPal
+DOMAIN-SUFFIX,paypalobjects.com                 # PayPal 静态资源
+
+# ---------- 5. 客服 / 其它组件（可选）----------
+DOMAIN-SUFFIX,salesforce-scrt.com               # 客服（arcteryxservice.my.salesforce-scrt.com）
+DOMAIN-SUFFIX,my.site.com                       # 客服界面（arcteryxservice.my.site.com）
+DOMAIN-SUFFIX,optimizely.com                    # A/B 测试（会影响页面变体）
+DOMAIN-SUFFIX,evergage.com                      # 个性化推荐
+DOMAIN-SUFFIX,evgnet.com                        # 厂商未知，实测在商品页与结账页
+
+# ---------- 6. 统计 / 广告（可走可不走；想「同一个出口」就一起走）----------
+DOMAIN-SUFFIX,doubleclick.net                   # 含 ad. / googleads.g. / *.fls.
+DOMAIN-SUFFIX,bat.bing.com
+DOMAIN-SUFFIX,connect.facebook.net
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,snapchat.com
+DOMAIN-SUFFIX,sc-static.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,creativecdn.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,bounceexchange.com
+DOMAIN-SUFFIX,bouncex.net
+DOMAIN-SUFFIX,wknd.ai
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,impactcdn.com
+DOMAIN-SUFFIX,tvsquared.com
+DOMAIN-SUFFIX,sjv.io                            # 联盟追踪（CJ）
+DOMAIN-SUFFIX,igodigital.com                    # Salesforce Marketing Cloud
+DOMAIN-SUFFIX,switchgrowth.com
+DOMAIN-SUFFIX,adobedtm.com                      # Adobe Launch（页面上 41 条脚本）
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,nr-data.net
+DOMAIN-SUFFIX,analytics.google.com
+DOMAIN-SUFFIX,maps.googleapis.com               # 门店地图
