@@ -8,3 +8,29 @@ DOMAIN-SUFFIX,owproxy.com
 DOMAIN-SUFFIX,auth.aycd.io
 DOMAIN-SUFFIX,aycd.io
 
+# total 25 carbon
+IP-CIDR,87.86.164.119/32,no-resolve
+IP-CIDR,87.86.164.122/32,no-resolve
+IP-CIDR,87.86.164.154/32,no-resolve
+IP-CIDR,87.86.164.156/32,no-resolve
+IP-CIDR,87.86.164.184/32,no-resolve
+IP-CIDR,87.86.164.187/32,no-resolve
+IP-CIDR,87.86.164.242/32,no-resolve
+IP-CIDR,87.86.165.9/32,no-resolve
+IP-CIDR,87.86.165.14/32,no-resolve
+IP-CIDR,87.86.165.39/32,no-resolve
+IP-CIDR,87.86.165.80/32,no-resolve
+IP-CIDR,87.86.165.81/32,no-resolve
+IP-CIDR,87.86.165.82/32,no-resolve
+IP-CIDR,87.86.166.186/32,no-resolve
+IP-CIDR,87.86.166.212/32,no-resolve
+IP-CIDR,87.86.166.247/32,no-resolve
+IP-CIDR,87.86.167.19/32,no-resolve
+IP-CIDR,87.86.167.20/32,no-resolve
+IP-CIDR,87.86.167.31/32,no-resolve
+IP-CIDR,87.86.167.32/32,no-resolve
+IP-CIDR,87.86.167.42/32,no-resolve
+IP-CIDR,87.86.167.62/32,no-resolve
+IP-CIDR,87.86.167.193/32,no-resolve
+IP-CIDR,87.86.167.194/32,no-resolve
+IP-CIDR,87.86.167.200/32,no-resolve
