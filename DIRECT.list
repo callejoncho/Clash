@@ -20,3 +20,9 @@ DOMAIN-SUFFIX,qd.je
 DOMAIN-SUFFIX,indevs.in
 DOMAIN-SUFFIX,newtvsuper.xyz
 DOMAIN-SUFFIX,atlanticflixtv.online
+
+
+##央视频
+DOMAIN-SUFFIX,cctv.cn
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,cctv.tv
