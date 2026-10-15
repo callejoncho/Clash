@@ -32,7 +32,8 @@ DOMAIN-SUFFIX,sanity.io
 DOMAIN-SUFFIX,cookielaw.org         
 DOMAIN-SUFFIX,onetrust.com         
 DOMAIN-SUFFIX,typekit.net           
-DOMAIN,mpc2-prod-29-is5qnl632q-uc.a.run.app   
+DOMAIN,mpc2-prod-29-is5qnl632q-uc.a.run.app
+DOMAIN-SUFFIX,a.run.app
 
 # ---------- 4. 支付方式（按你实际用哪种加）----------
 #DOMAIN-SUFFIX,cdn-apple.com                     
