@@ -34,3 +34,16 @@ IP-CIDR,87.86.167.62/32,no-resolve
 IP-CIDR,87.86.167.193/32,no-resolve
 IP-CIDR,87.86.167.194/32,no-resolve
 IP-CIDR,87.86.167.200/32,no-resolve
+
+# total 10 proxywing
+IP-CIDR,206.251.15.47/32,no-resolve
+IP-CIDR,206.251.15.212/32,no-resolve
+IP-CIDR,206.251.15.199/32,no-resolve
+IP-CIDR,206.251.15.121/32,no-resolve
+IP-CIDR,206.251.15.184/32,no-resolve
+IP-CIDR,206.251.15.32/32,no-resolve
+IP-CIDR,206.251.15.193/32,no-resolve
+IP-CIDR,206.251.15.204/32,no-resolve
+IP-CIDR,206.251.15.155/32,no-resolve
+IP-CIDR,206.251.15.71/32,no-resolve
+
