@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,lum-superproxy.com
 DOMAIN-SUFFIX,owproxy.com
 DOMAIN-SUFFIX,auth.aycd.io
 DOMAIN-SUFFIX,aycd.io
+DOMAIN-SUFFIX,db.aoaots.com
 
 # total 25 carbon
 IP-CIDR,87.86.164.119/32,no-resolve
